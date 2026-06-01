@@ -1,1 +1,2 @@
-# depascal.ch
+# Grüezi wohl :)
+## This is the website of Pascal (duh)
