@@ -81,7 +81,7 @@ export function Game(){
 
     }
 
-    const moves = history.map((squares:Array<string | null>,move:number)=>{
+    const moves = history.map((_squares:Array<string | null>,move:number)=>{
         let description;
         if (move>0){
             description = 'Go to move #' + move;
