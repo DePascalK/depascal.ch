@@ -121,10 +121,17 @@
 
 // export default App
 
+
+
+
+
+
+// ---------------------------------------------MY STUFF------------------------------------
 import './App.css'
 import { getImageUrl } from './utils';
 import { useState } from 'react';
 import { Game } from './tictactoe'
+import { Button } from 'flowbite-react';
 
 type person = {
     imageId: string;
@@ -150,13 +157,13 @@ export default function MyApp(){
       <h1>
         Welcome to my page! Actual content coming soon ish
       </h1>
-      <h2>Tic-Tac-Toe, try it!</h2>
       <Game />
       <hr/>
       <Gallery />
       <h2>Synced buttons</h2>
       <MyButton count={count} onClick={handleClick}/>
       <MyButton count={count} onClick={handleClick}/>
+      <Button color="green" size="sm">Looks good → does nothing </Button>
       <div className='about-page'>
         <AboutPage/>
       </div>
@@ -205,7 +212,7 @@ type MyButtonProps={
 
 function MyButton({count, onClick}:MyButtonProps){
   return(
-    <button onClick={onClick}>Clicked {count} times</button>
+    <button className= "btn-default" onClick={onClick}>Clicked {count} times</button>
   )
 }
 

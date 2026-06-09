@@ -90,7 +90,7 @@ export function Game(){
         }
         return (
             <li key={move}>
-                <button onClick={()=>jumpTo(move)}>
+                <button className="btn-default" onClick={()=>jumpTo(move)}>
                     {description}
                 </button>
             </li>
@@ -99,9 +99,13 @@ export function Game(){
 
 
     return(
+        
         <div className="game">
-            <div className="game-board">
-                <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
+            <div className="game-main">
+                <h2>Tic-Tac-Toe, try it!</h2>   
+                <div className="game-board">
+                    <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
+                </div>
             </div>
             <div className="game-info">
                 <ol>{moves}</ol>
