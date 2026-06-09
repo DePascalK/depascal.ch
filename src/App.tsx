@@ -196,7 +196,7 @@ function Avatar(props:props) {
   );
 }
 
-function Profile() {
+export function Profile() {
   return (
     <Avatar 
         person={{ name: 'Lin Lanying', imageId: '1bX5QH6'}}

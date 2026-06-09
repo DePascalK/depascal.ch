@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "flowbite-react/plugin/tailwindcss";
+/* This underline does not matter, the website compiles and works */
 @source "../.flowbite-react/class-list.json";
 
 .btn-default {
