@@ -102,7 +102,6 @@ export default function Game(){
         
         <div className="game">
             <div className="game-main">
-                <h2>Tic-Tac-Toe, try it!</h2>   
                 <div className="game-board">
                     <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
                 </div>

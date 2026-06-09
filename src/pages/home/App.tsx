@@ -130,10 +130,8 @@
 import '../../styles/App.css'
 import { getImageUrl } from '../../shared/utils';
 import { useState } from 'react';
-import Game from '../game/tictactoe'
 import { Button } from 'flowbite-react';
-// import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
-// import Link from "next/link";
+import { FullNavBar } from '../../shared/ui_elements';
 
 type person = {
     imageId: string;
@@ -156,10 +154,10 @@ export default function MyApp(){
   
   return(
     <div>
+      <FullNavBar/>
       <h1>
         Welcome to my page! Actual content coming soon ish
       </h1>
-      <Game />
       <hr/>
       <Gallery />
       <h2>Synced buttons</h2>
